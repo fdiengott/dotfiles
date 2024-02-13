@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export GH_TOKEN=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
 
@@ -37,22 +38,18 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-)
+plugins=( git zsh-syntax-highlighting zsh-autosuggestions fzf ripgrep zoxide )
 
 HISTFILE="$HOME/.zsh_history"
 
 source $ZSH/oh-my-zsh.sh
 
 if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
+. ~/.bash_aliases
 fi
 
 if [ -f ~/.bash_functions ]; then
-  . ~/.bash_functions
+. ~/.bash_functions
 fi
 
 autoload -U add-zsh-hook
@@ -62,9 +59,9 @@ load-nvmrc() {
   elif [[ ($(nvm version) != $(nvm version default)) && ($PWD = /Users/$USERNAME) ]]; then
     echo "Reverting to nvm default version"
     nvm use default
-fi }
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+  fi }
+  add-zsh-hook chpwd load-nvmrc
+  load-nvmrc
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -100,3 +97,8 @@ tx=36:\
 *.md=46:"
 
 eval "$(zoxide init zsh)"
+
+export FZF_DEFULAT_OPTS='--height 40% --reverse --border'
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
