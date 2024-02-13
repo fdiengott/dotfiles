@@ -12,6 +12,8 @@ alias op='code .'
 alias ls='exa -1F --color=always'
 alias tree='exa --tree -I node_modules'
 alias cat='batcat'
+alias fhist='history | fzf'
+alias ff='nvim $(fzf)'
 
 # git
 alias gst='git status'
