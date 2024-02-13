@@ -2,8 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
-export GH_TOKEN=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
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="minimalism"
