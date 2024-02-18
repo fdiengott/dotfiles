@@ -15,10 +15,6 @@ You should run that command and read that help section for more information.
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 
--- Imports
-require 'core.keybindings'
-require "core.vim_settings"
-
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -257,6 +253,12 @@ require('lazy').setup({
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
 }, {})
+
+
+-- Imports
+-- require 'core.keybindings'
+require 'core'
+require "core.vim_settings"
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
