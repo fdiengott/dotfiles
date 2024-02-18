@@ -27,8 +27,6 @@ nmap("<leader>h", ":nohlsearch<CR>")
 keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
 keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 
-nmap("<leader>/", "gcc")
-
 -- File Navigation
 -- includes dot files
 nmap("<leader>e", ":Telescope find_files hidden=true<cr>")

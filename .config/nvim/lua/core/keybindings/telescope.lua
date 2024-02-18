@@ -1,7 +1,7 @@
 local builtin = require('telescope.builtin')
 
 -- See `:help telescope.builtin`
-vim.keymap.set('n', '<leader>?', builtin.oldfiles, { desc = '[?] Find recently opened files' })
+vim.keymap.set('n', '<leader>/', builtin.oldfiles, { desc = '[/] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>f', function()
 	-- You can pass additional configuration to telescope to change theme, layout, etc.
