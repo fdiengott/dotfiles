@@ -31,6 +31,11 @@ alias gbc='git branch --show-current'
 
 alias windows='cd ~/../../mnt/c/Users/fdien/code'
 
+help() {
+   COMMAND=$1 
+   $COMMAND --help >> zx.txt && cat zx.txt && rm zx.txt
+}
+
 # takes a branch name of `feature/####/<component>/<description>`
 # and gives prompts to execute: fix(CAMPFIRE-####): <MESSAGE>
 gcmm() {
