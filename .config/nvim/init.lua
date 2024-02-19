@@ -49,10 +49,12 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- a playground to practice vim motions. :VimBeGood
   'ThePrimeagen/vim-be-good',
 
-  -- 'nvim-tree/nvim-web-devicons',
   'nvim-tree/nvim-tree.lua',
+
+  'tpope/vim-ragtag',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -272,8 +274,8 @@ require('lazy').setup({
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
-  require 'kickstart.plugins.autoformat',
-  require 'kickstart.plugins.debug',
+  require 'plugins.kickstart.autoformat',
+  require 'plugins.kickstart.debug',
 
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -287,8 +289,9 @@ require('lazy').setup({
 }, {})
 
 -- Imports
-require 'core'
-require 'custom.plugins.nvim-tree'
+require 'plugins'
+require 'keybindings'
+require 'settings'
 
 -- [[ Basic Keymaps ]]
 
@@ -316,23 +319,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
-
--- [[ Configure Telescope ]]
--- See `:help telescope` and `:help telescope.setup()`
-require('telescope').setup {
-  defaults = {
-    mappings = {
-      i = {
-        ['<C-u>'] = false,
-        ['<C-d>'] = false,
-      },
-    },
-    file_ignore_patterns = {
-      "node_modules",
-      ".git"
-    }
-  },
-}
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
@@ -528,10 +514,6 @@ require('mason-lspconfig').setup()
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- clangd = {},
-  -- gopls = {},
-  -- pyright = {},
-  -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
 

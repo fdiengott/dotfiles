@@ -74,3 +74,14 @@ nmap("<leader>Y", "\"+Y")
 
 -- starts a find and replace for the word under the cursor
 nmap("<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+--[[
+Other mappings to know based on plugins
+
+# ragtag
+This will allow for quick adding of html tags
+
+The following commands are done immediately after the tag has been typed (e.g. span|)
+<C-x><space> --- adds a closing tag and puts the cursor between the two
+<C-x><CR> --- adds a closing tag down a couple lines and puts the curser in the middle
+--]]
