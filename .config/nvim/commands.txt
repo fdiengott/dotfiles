@@ -1,16 +1,34 @@
 # This is a list of commands that I want to remember that are built in. 
 
-| command                                     | action                          | 
-| ------------------------------------------- | ------------------------------- |
-| `<action>iw`                                | inner word                      | 
-| `<action>aw`                                | a word                          |
-| `<action>ip`                                | inner paragraph                 | 
-| `<action>ap`                                | a paragraph                     | 
-| `=`                                         | equalize tabbing                | 
-| `:tabnew`                                   | new tab                         |
-| `gt`                                        | next tab                        |
+| command            | action                          | 
+| ------------------ | ------------------------------- |
+| `<action>iw`       | inner word                      | 
+| `<action>aw`       | a word                          |
+| `<action>ip`       | inner paragraph                 | 
+| `<action>ap`       | a paragraph                     | 
 
 
-| `-`                                         | open file explorer              |
+## Tabs
+
+| `=`                | equalize tabbing                | 
+| `:tabnew`          | new tab                         |
+| `gt`               | next tab                        |
+
+
+## Terminal
+
+| command            | action                          | 
+| ------------------ | ------------------------------- |
+| `<leader>t`        | toggle terminal                 |
+| `<C-\>`            | toggle terminal                 |
+| `<name><C-\>`      | open name terminal              |
+
+
+## Explore files and buffers
+
+| command                                     | action                                                                                  | 
+| ------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `-`                                         | open file explorer                                                                      |
 | `:find <fuzzy file search>`                 | opens any file in the tree using fuzzy search. Use * at the beginning/end of a filename |
-| `:b <substring of an open buffer filename>` | switches to any open buffer quickly and easily |
+| `:b <substring of an open buffer filename>` | switches to any open buffer quickly and easily                                          |
+| `<leader>q`				      | open nvim tree										|
