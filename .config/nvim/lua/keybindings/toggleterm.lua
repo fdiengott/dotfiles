@@ -1,5 +1,7 @@
 require('toggleterm').setup({
-	direction = 'float'
+	direction = 'horizontal',
+	size = 20,
+	open_mapping = [[<c-\>]],
 })
 
 vim.keymap.set("n", "<leader>t", vim.cmd.ToggleTerm)
