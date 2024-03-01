@@ -1,0 +1,11 @@
+# This is a list of commands that I want to remember that are built in. 
+
+| command      | action                          | 
+| ------------ | ------------------------------- |
+| `<action>iw` | inner word                      | 
+| `<action>aw` | a word                          |
+| `<action>ip` | inner paragraph                 | 
+| `<action>ap` | a paragraph                     | 
+| `=`          | equalize tabbing                | 
+| `:tabnew`    | new tab                         |
+| `gt`         | next tab                        |
