@@ -13,12 +13,12 @@ local imap = function(keys, func)
 	vim.api.nvim_set_keymap("i", keys, func, opts)
 end
 
-
 -- switch between windows
-nmap("<C-h>", "<C-w>h")
-nmap("<C-j>", "<C-w>j")
-nmap("<C-k>", "<C-w>k")
-nmap("<C-l>", "<C-w>l")
+-- nmap("<C-h>", "<C-w>h")
+-- nmap("<C-j>", "<C-w>j")
+-- nmap("<C-k>", "<C-w>k")
+-- nmap("<C-l>", "<C-w>l")
+nmap("<leader>w", "<C-w>")
 
 -- clear match highlighting
 nmap("<leader>h", ":nohlsearch<CR>")
