@@ -53,6 +53,7 @@ require('lazy').setup({
   'ThePrimeagen/vim-be-good',
 
   'nvim-tree/nvim-tree.lua',
+  'github/copilot.vim',
 
   'tpope/vim-ragtag',
   'stevearc/oil.nvim',
