@@ -18,6 +18,12 @@ sudo apt install git-all
 sudo apt-get install stow
 ```
 
+if you are unable to use stow for some reason (security reasons), you can use the following command to create symlinks
+
+```bash
+> ln -s ../dotfiles/.config/nvim nvim
+```
+
 ### exa
 
 https://github.com/ogham/exa          |

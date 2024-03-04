@@ -1,5 +1,11 @@
 # This is a list of commands that I want to remember that are built in. 
 
+| command            | action                         | 
+| ------------------ | ------------------------------ |
+| `<C-z>`            | suspend nvim                   |
+| `fg`               | resume nvim                    |
+
+
 | command            | action                          | 
 | ------------------ | ------------------------------- |
 | `<action>iw`       | inner word                      | 
