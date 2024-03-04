@@ -33,7 +33,7 @@ nmap("<leader>e", ":Telescope find_files hidden=true<cr>")
 -- keymap("n", "<leader>e", ":Lex 30<CR>", opts)
 
 -- Navigation
-nmap("(", "0")
+nmap("(", "^")
 nmap(")", "$")
 
 -- Navigate buffers

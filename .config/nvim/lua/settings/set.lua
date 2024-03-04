@@ -1,6 +1,8 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+vim.opt.path = vim.opt.path + "**"
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
