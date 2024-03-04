@@ -8,11 +8,14 @@
 | `<action>ap`       | a paragraph                     | 
 
 
-## Tabs
+## Tabs/Buffers
 
-| `=`                | equalize tabbing                | 
-| `:tabnew`          | new tab                         |
-| `gt`               | next tab                        |
+| command            | action                                     | 
+| ------------------ | ------------------------------------------ |
+| `=`                | equalize tabbing                           | 
+| `:tabnew`          | new tab                                    |
+| `gt`               | next tab                                   |
+| `<leader>v`        | open a file in the current dir in a vsplit |
 
 
 ## Terminal
@@ -32,3 +35,11 @@
 | `:find <fuzzy file search>`                 | opens any file in the tree using fuzzy search. Use * at the beginning/end of a filename |
 | `:b <substring of an open buffer filename>` | switches to any open buffer quickly and easily                                          |
 | `<leader>q`				      | open nvim tree										|
+
+
+## Moving the cursor to non-traditional places
+
+| command  | action                           |
+| -------- | -------------------------------- |
+| `]c`     | move cursor to next git hunk     | 
+| `<C-o>`  | move to previous cursor position |

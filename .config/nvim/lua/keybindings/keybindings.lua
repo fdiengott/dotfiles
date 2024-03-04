@@ -13,6 +13,16 @@ local imap = function(keys, func)
 	vim.api.nvim_set_keymap("i", keys, func, opts)
 end
 
+-- Open root init.lua file
+nmap("<leader>vi", ":tabe $MYVIMRC<CR>")
+
+-- Save on control+s
+nmap("<C-s>", ":w<CR>")
+
+-- set j and k to more obvious default behavior
+nmap("j", "gj")
+nmap("k", "gk")
+
 -- switch between windows
 -- nmap("<C-h>", "<C-w>h")
 -- nmap("<C-j>", "<C-w>j")
@@ -40,8 +50,12 @@ nmap(")", "$")
 nmap("<leader>]", ":bnext<CR>")
 nmap("<leader>[", ":bprevious<CR>")
 
+-- Splits
+vim.keymap.set('n', "<leader>v", ":vs <C-r>=escape(expand(\"%:p:h\"), ' ') . '/'<cr>")
+
 -- Insert
 imap("jk", "<ESC>")
+imap("kj", "<ESC>")
 
 -- Visual
 vmap("<C-k>", "<ESC>")
