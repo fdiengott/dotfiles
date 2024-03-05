@@ -49,6 +49,9 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
+  'tpope/surround.vim',
+
   -- a playground to practice vim motions. :VimBeGood
   'ThePrimeagen/vim-be-good',
 
