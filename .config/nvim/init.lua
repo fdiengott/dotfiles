@@ -46,14 +46,12 @@ require('lazy').setup({
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
-  -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
+  'tpope/vim-sleuth',         -- Detect tabstop and shiftwidth automatically
 
-  'tpope/surround.vim', -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
-  'tpope/vim-repeat',   -- makes the dot function a little smarter
+  'tpope/vim-surround',       -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
+  'tpope/vim-repeat',         -- makes the dot function a little smarter
 
-  -- a playground to practice vim motions. :VimBeGood
-  'ThePrimeagen/vim-be-good',
+  'ThePrimeagen/vim-be-good', -- a playground to practice vim motions. :VimBeGood
 
   'nvim-tree/nvim-tree.lua',
   'github/copilot.vim',
