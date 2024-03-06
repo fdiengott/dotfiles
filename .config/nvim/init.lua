@@ -202,9 +202,22 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'auto',
+        theme = 'iceberg_dark',
         component_separators = '|',
         section_separators = '',
+      },
+      sections = {
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch', 'diff' },
+        lualine_c = {
+          {
+            'filename',
+            path = 4
+          },
+        },
+        lualine_x = { 'buffers' },
+        lualine_y = { 'filetype', 'filesize' },
+        lualine_z = { 'location' }
       },
     },
   },
