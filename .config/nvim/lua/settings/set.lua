@@ -58,6 +58,3 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.opt.scrolloff = 4
-
--- COLORS / guibg for background, guifg for foreground
-vim.cmd("highlight Normal guibg=#000000")
