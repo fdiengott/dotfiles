@@ -5,7 +5,7 @@ local insert = luasnip.insert_node
 
 -- https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md#loaders
 luasnip.add_snippets("javascript", {
-    snippet("cc", {
+    snippet({ trig = "cc", name = "console.count" }, {
         text("console.count("),
         insert(1),
         text(");"),
