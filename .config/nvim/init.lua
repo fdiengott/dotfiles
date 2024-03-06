@@ -1,14 +1,7 @@
 --[[
  https://learnxinyminutes.com/docs/lua/
-
 And then you can explore or search through `:help lua-guide`
   - https://neovim.io/doc/user/lua-guide.html
-
-
-Kickstart Guide:
-
-I have left several `:help X` comments throughout the init.lua
-You should run that command and read that help section for more information.
 --]]
 
 -- Set <space> as the leader key
@@ -36,22 +29,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- [[ Configure plugins ]]
--- NOTE: Here is where you install your plugins.
 --  You can configure plugins using the `config` key.
 --
---  You can also configure plugins after the setup call,
---    as they will be available in your neovim runtime.
 require('lazy').setup({
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
-  'tpope/vim-sleuth',         -- Detect tabstop and shiftwidth automatically
+  'tpope/vim-sleuth',   -- Detect tabstop and shiftwidth automatically
 
-  'tpope/vim-surround',       -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
-  'tpope/vim-repeat',         -- makes the dot function a little smarter
-
-  'ThePrimeagen/vim-be-good', -- a playground to practice vim motions. :VimBeGood
+  'tpope/vim-surround', -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
+  'tpope/vim-repeat',   -- makes the dot function a little smarter
 
   'nvim-tree/nvim-tree.lua',
   'github/copilot.vim',
