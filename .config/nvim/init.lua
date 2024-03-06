@@ -4,13 +4,12 @@ And then you can explore or search through `:help lua-guide`
   - https://neovim.io/doc/user/lua-guide.html
 --]]
 
+--  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 -- Set <space> as the leader key
 -- See `:help mapleader`
 vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-
---  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
@@ -291,6 +290,11 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {}
+  },
 
 }, {})
 
