@@ -83,8 +83,14 @@ nmap("<leader>y", "\"+y", 'yank to os clipboard')
 vmap("<leader>y", "\"+y", 'yank to os clipboard')
 nmap("<leader>Y", "\"+Y", 'yank line to os clipboard')
 
+--[[
+	Utilities
+--]]
+
 -- starts a find and replace for the word under the cursor
 nmap("<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], '[R]eplace current word')
+
+vmap("<leader>sw", [[:!tr ' ' '\n' | sort | tr '\n' ' '<CR>]], '[S]ort words')
 
 --[[
 Other mappings to know based on plugins
