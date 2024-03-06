@@ -297,6 +297,7 @@ require('lazy').setup({
 require 'plugins'
 require 'keybindings'
 require 'settings'
+require 'snippets'
 
 -- [[ Basic Keymaps ]]
 
