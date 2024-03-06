@@ -79,12 +79,12 @@ nmap("N", "Nzz")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- leader y yanks to OS clipboard so vim can have internal clipboard
-nmap("<leader>y", "\"+y", { desc = 'yank to os clipboard' })
-vmap("<leader>y", "\"+y", { desc = 'yank to os clipboard' })
-nmap("<leader>Y", "\"+Y", { desc = 'yank line to os clipboard' })
+nmap("<leader>y", "\"+y", 'yank to os clipboard')
+vmap("<leader>y", "\"+y", 'yank to os clipboard')
+nmap("<leader>Y", "\"+Y", 'yank line to os clipboard')
 
 -- starts a find and replace for the word under the cursor
-nmap("<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = '[R]eplace current word' })
+nmap("<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], '[R]eplace current word')
 
 --[[
 Other mappings to know based on plugins
