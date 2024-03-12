@@ -16,6 +16,9 @@ end
 -- Open root init.lua file
 nmap("<leader>vi", ":tabe $MYVIMRC<CR>", 'Open [vi]m config')
 
+-- toggle relative line numbers
+nmap("<leader>rl", ":set relativenumber!<CR>", 'Toggle [r]elative line numbers')
+
 -- Save on control+s
 nmap("<C-s>", ":w<CR>")
 
