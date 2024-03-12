@@ -17,6 +17,9 @@ vim.o.foldnestmax = 10
 vim.o.foldenable = false
 vim.o.foldlevel = 2
 
+-- vim.opt.guicursor = 'n-v-c:block-Cursor,i:ver100-iCursor,i:blinkon10'
+vim.opt.guicursor = 'n-c:block-Cursor,v:block-vCursor,i:ver100-iCursor,i:blinkon10'
+
 vim.opt.cursorline = true
 
 -- Set highlight on search
