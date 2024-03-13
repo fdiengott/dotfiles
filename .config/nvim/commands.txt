@@ -49,3 +49,18 @@
 | -------- | -------------------------------- |
 | `]c`     | move cursor to next git hunk     | 
 | `<C-o>`  | move to previous cursor position |
+
+## Emmett
+
+| command  | action                           |
+| -------- | -------------------------------- |
+| <C-y>, | action                           |
+
+## Custom keybinds
+
+| command      | action                           |
+| ------------ | -------------------------------- |
+| `<leader>cc` | toggle on the colorizer plugin   |
+| `<leader>dd` | open floating lsp diagnostics    |
+| `<leader>dl` | open list of lsp diagnostics     |
+| `<leader>rl` | toggle relativenumber            |
