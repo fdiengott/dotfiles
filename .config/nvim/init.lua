@@ -305,6 +305,7 @@ require('lazy').setup({
   --       Uncomment any of the lines below to enable them.
   require 'plugins.kickstart.autoformat',
   require 'plugins.kickstart.debug',
+  require 'plugins.treesj',
 
   {
     'windwp/nvim-autopairs',
