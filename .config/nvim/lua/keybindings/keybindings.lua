@@ -36,11 +36,6 @@ nmap("<leader>w", "<C-w>")
 -- clear match highlighting
 nmap("<leader>h", ":nohlsearch<CR>")
 
--- File Navigation
--- includes dot files
-nmap("<leader>e", ":Telescope find_files hidden=true<cr>")
--- keymap("n", "<leader>e", ":Lex 30<CR>", opts)
-
 -- Navigation
 nmap("(", "^")
 nmap(")", "$")
@@ -50,8 +45,15 @@ nmap("<leader>]", ":bnext<CR>", 'next buffer')
 nmap("<leader>[", ":bprevious<CR>", 'previous buffer')
 
 -- Splits
-vim.keymap.set('n', "<leader>v", ":vs <C-r>=escape(expand(\"%:p:h\"), ' ') . '/'<cr>",
-	{ desc = 'open filetree in current dir' })
+-- vim.keymap.set('n', "<leader>v", ":vs " .. currentDir, { desc = 'open filetree in current dir' })
+-- vim.keymap.set('n', "<leader>e", ":e " .. currentDir, { desc = 'open filetree in current dir' })
+
+local currentDir = "<C-r>=escape(expand(\"%:p:h\"), ' ') . '/'<cr>"
+vim.keymap.set('n', "<leader>be", ":e " .. currentDir, { desc = 'open [b]uffer with :[e]' })
+vim.keymap.set('n', "<leader>bv", ":vs " .. currentDir, { desc = 'open [b]uffer with :[v]s' })
+vim.keymap.set('n', "<leader>bs", ":sp " .. currentDir, { desc = 'open [b]uffer with :[s]p' })
+vim.keymap.set('n', "<leader>bd", ":bd<CR>", { desc = '[d]elete [b]uffer' })
+vim.keymap.set('n', "<leader>bs", ":w<CR>", { desc = '[s]ave [b]uffer' })
 
 -- Insert
 imap("jk", "<ESC>")
