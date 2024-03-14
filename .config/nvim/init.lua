@@ -40,6 +40,8 @@ require('lazy').setup({
   'tpope/vim-surround', -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
   'tpope/vim-repeat',   -- makes the dot function a little smarter
 
+  'ggandor/leap.nvim',  -- Leap Motion
+
   'mattn/emmet-vim',    -- HTML/CSS/JS autocompletion
 
   'nvim-tree/nvim-tree.lua',
