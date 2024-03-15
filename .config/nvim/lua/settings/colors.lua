@@ -6,7 +6,11 @@
 -- editor colors
 vim.cmd("highlight normal guibg=#000408")
 vim.cmd("highlight lualine_a_normal guibg=#e7a7fd")
--- vim.cmd("highlight TabLine guibg=#000000")
+
+vim.cmd("highlight lualine_a_buffers_active guibg=#91dbfa guifg=#000000 gui='bold'")
+vim.cmd("highlight lualine_a_buffers_inactive guibg=#222408")
+vim.cmd("highlight lualine_z_tabs_active guibg=#e7a7fd guifg=#000000 gui='bold'")
+
 vim.cmd("highlight TabLineSel guibg=#0044aa")
 
 -- cursor colors
