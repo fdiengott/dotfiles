@@ -225,13 +225,17 @@ require('lazy').setup({
         lualine_c = {
           {
             'filename',
-            path = 4
+            path = 1
           },
         },
-        lualine_x = { 'buffers' },
+        -- lualine_x = { 'buffers' },
         lualine_y = { 'filetype', 'filesize' },
         lualine_z = { 'location' }
       },
+      tabline = {
+        lualine_a = { 'buffers' },
+        lualine_z = { 'tabs', },
+      }
     },
   },
 
