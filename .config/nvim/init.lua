@@ -43,7 +43,7 @@ require('lazy').setup({
   'ggandor/leap.nvim',  -- Leap Motion
   'nvimdev/hlsearch.nvim',
 
-  'mattn/emmet-vim',    -- HTML/CSS/JS autocompletion
+  'mattn/emmet-vim', -- HTML/CSS/JS autocompletion
 
   'nvim-tree/nvim-tree.lua',
   'norcalli/nvim-colorizer.lua',
