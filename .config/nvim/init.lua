@@ -335,6 +335,7 @@ require 'plugins'
 require 'keybindings'
 require 'settings'
 require 'snippets'
+require 'autocmds'
 
 -- [[ Basic Keymaps ]]
 
