@@ -5,6 +5,7 @@ require('plugins.oil')
 require('plugins.copilot')
 require('plugins.todo-comments')
 require('plugins.colorizer')
+require('plugins.hlsearch')
 
 -- add plugins here or in other files in this directory!
 return {

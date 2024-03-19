@@ -41,6 +41,7 @@ require('lazy').setup({
   'tpope/vim-repeat',   -- makes the dot function a little smarter
 
   'ggandor/leap.nvim',  -- Leap Motion
+  'nvimdev/hlsearch.nvim',
 
   'mattn/emmet-vim',    -- HTML/CSS/JS autocompletion
 

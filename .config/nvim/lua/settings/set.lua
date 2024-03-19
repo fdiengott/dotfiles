@@ -23,7 +23,7 @@ vim.opt.guicursor = 'n-c:block-Cursor,v:block-vCursor,i:ver100-iCursor,i:blinkon
 vim.opt.cursorline = true
 
 -- Set highlight on search
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 -- Make line numbers default
