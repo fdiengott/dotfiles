@@ -4,6 +4,7 @@
 | ------------------ | ------------------------------ |
 | `<C-z>`            | suspend nvim                   |
 | `fg`               | resume nvim                    |
+| `:noa w`           | write without formatting       |
 
 
 | command            | action                          | 

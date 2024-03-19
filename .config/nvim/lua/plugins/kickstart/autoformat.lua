@@ -65,6 +65,7 @@ return {
               filter = function(c)
                 return c.id == client.id
               end,
+              formatting_options = formatting_options
             }
           end,
         })

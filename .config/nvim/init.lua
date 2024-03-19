@@ -478,6 +478,12 @@ vim.defer_fn(function()
   }
 end, 0)
 
+formatting_options = {
+  tabSize = 4,
+  trimTrailingWhitespace = true,
+  insertFinalNewline = true,
+}
+
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
@@ -516,11 +522,12 @@ local on_attach = function(_, bufnr)
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format({
-      formatting_options = {
-        tabSize = 4,
-        trimTrailingWhitespace = true,
-        insertFinalNewline = true,
-      }
+      formatting_options = formatting_options
+      -- formatting_options = {
+      --   tabSize = 4,
+      --   trimTrailingWhitespace = true,
+      --   insertFinalNewline = true,
+      -- }
     })
   end, { desc = 'Format current buffer with LSP' })
 end
