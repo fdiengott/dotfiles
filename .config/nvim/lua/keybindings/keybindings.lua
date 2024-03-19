@@ -1,5 +1,3 @@
-local keymap = vim.api.nvim_set_keymap
-
 vim.opt.cursorline = true
 local opts = { noremap = true, silent = true }
 
@@ -13,18 +11,17 @@ local imap = function(keys, func)
 	vim.api.nvim_set_keymap("i", keys, func, opts)
 end
 
+nmap("<leader><leader>s", "<cmd>source %<CR>")
+
 -- Open root init.lua file
 nmap("<leader>vi", ":tabe $MYVIMRC<CR>", 'Open [vi]m config')
 
 -- toggle relative line numbers
 nmap("<leader>rl", ":set relativenumber!<CR>", 'Toggle [r]elative line numbers')
 
--- Save on control+s
-nmap("<C-s>", ":w<CR>")
-
--- set j and k to more obvious default behavior
-nmap("j", "gj")
-nmap("k", "gk")
+-- Remap for dealing with word wrap
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- switch between windows
 -- nmap("<C-h>", "<C-w>h")
@@ -32,6 +29,10 @@ nmap("k", "gk")
 -- nmap("<C-k>", "<C-w>k")
 -- nmap("<C-l>", "<C-w>l")
 nmap("<leader>w", "<C-w>")
+nmap("<leader>w+", "10<C-w>+")
+nmap("<leader>w-", "10<C-w>-")
+nmap("<leader>w>", "10<C-w>>")
+nmap("<leader>w<", "10<C-w><")
 
 -- clear match highlighting
 nmap("<leader>h", ":nohlsearch<CR>")
@@ -53,7 +54,7 @@ vim.keymap.set('n', "<leader>be", ":e " .. currentDir, { desc = 'open [b]uffer w
 vim.keymap.set('n', "<leader>bv", ":vs " .. currentDir, { desc = 'open [b]uffer with :[v]s' })
 vim.keymap.set('n', "<leader>bs", ":sp " .. currentDir, { desc = 'open [b]uffer with :[s]p' })
 vim.keymap.set('n', "<leader>bd", ":bd<CR>", { desc = '[d]elete [b]uffer' })
-vim.keymap.set('n', "<leader>bs", ":w<CR>", { desc = '[s]ave [b]uffer' })
+vim.keymap.set('n', "<leader>bw", ":w<CR>", { desc = '[s]ave [b]uffer' })
 
 -- Insert
 imap("jk", "<ESC>")
@@ -95,7 +96,8 @@ nmap("<leader>Y", "\"+Y", 'yank line to os clipboard')
 -- starts a find and replace for the word under the cursor
 nmap("<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], '[R]eplace current word')
 
-vmap("<leader>sw", [[:!tr ' ' '\n' | sort | tr '\n' ' '<CR>]], '[S]ort words')
+-- vmap("<leader>sw", [[:!tr ' ' '\n' | sort | tr '\n' ' '<CR>]], '[S]ort words')
+vmap("<leader>s", ":sort<CR>", '[S]ort words')
 
 --[[
 Other mappings to know based on plugins
