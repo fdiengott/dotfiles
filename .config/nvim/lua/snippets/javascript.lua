@@ -7,7 +7,7 @@ local rep = extras.rep -- this will repeat whatever is in the corresponding inse
 local fmt = require("luasnip.extras.fmt").fmt
 
 -- https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md#loaders
-luasnip.add_snippets("javascript", {
+luasnip.add_snippets("javascriptreact", {
     snippet({ trig = "count", name = "console.count" }, {
         text("console.count("),
         insert(1),
@@ -18,7 +18,10 @@ luasnip.add_snippets("javascript", {
         insert(1),
         text(");"),
     }),
-    snippet("caf", fmt("const {} = ({}) => {{\n\t{}\n}};", { insert(1), insert(2), insert(3) })),
+    snippet({ trig = "raf", name = "react arrow function" },
+        fmt("const {} = ({}) => {{\n\t{}\n}};", { insert(1), insert(2), insert(3) })),
+    -- snippet("impt", fmt("import {{{}}} from 'propt-types';"), { insert(1) }),
+    snippet({ trig = "impd", name = "import destructured" }, fmt("import {{ {} }} from '{}';", { insert(1), insert(2) })),
 })
 
 -- example of repeat
