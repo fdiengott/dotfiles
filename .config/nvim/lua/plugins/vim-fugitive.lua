@@ -1,3 +1,3 @@
-require {
+return {
     'tpope/vim-fugitive',
 }

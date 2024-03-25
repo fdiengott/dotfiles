@@ -1,3 +1,1 @@
-require {
-    'mattn/emmet-vim', -- HTML/CSS/JS autocompletion
-}
+return 'mattn/emmet-vim'

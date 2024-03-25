@@ -1,3 +1,1 @@
-require {
-    'tpope/vim-repeat',
-}
+return 'tpope/vim-repeat'

@@ -1,3 +1,1 @@
-require {
-    'tpope/vim-sleuth',
-}
+return 'tpope/vim-sleuth'

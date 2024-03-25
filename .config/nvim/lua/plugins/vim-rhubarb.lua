@@ -1,3 +1,1 @@
-require {
-    -- 'tpope/vim-rhubarb',
-}
+return '' -- 'tpope/vim-rhubarb'

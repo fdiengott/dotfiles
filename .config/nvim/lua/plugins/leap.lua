@@ -1,3 +1,1 @@
-require {
-    'ggandor/leap.nvim', -- Leap Motion
-}
+return 'ggandor/leap.nvim'
