@@ -55,6 +55,13 @@ require('lazy').setup({
 
     require('plugins.copilot'),
 
+    {
+        "eoh-bse/minintro.nvim",
+        opts = { color = '#e7a7fd' },
+        config = true,
+        lazy = false
+    },
+
     -- NOTE: This is where your plugins related to LSP can be installed.
     --  The configuration is done below. Search for lspconfig to find it below.
     {
