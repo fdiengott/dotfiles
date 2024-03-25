@@ -11,7 +11,7 @@ local imap = function(keys, func)
 	vim.api.nvim_set_keymap("i", keys, func, opts)
 end
 
-nmap("<leader><leader>s", "<cmd>source %<CR>")
+nmap("<leader><leader>s", ":source %<CR>")
 
 -- Open root init.lua file
 nmap("<leader>vi", ":tabe $MYVIMRC<CR>", 'Open [vi]m config')
@@ -29,11 +29,11 @@ nmap("<C-j>", "<C-w>j")
 nmap("<C-k>", "<C-w>k")
 nmap("<C-l>", "<C-w>l")
 nmap("<leader>w", "<C-w>")
-nmap("<C-+>", "10<C-w>+")
-nmap("<C-->", "10<C-w>-")
--- TODO: check if these work
-nmap("<C->>", "10<C-w>>")
-nmap("<C-<>", "10<C-w><")
+
+nmap("<leader>wh", "20<C-w>>")
+nmap("<leader>wj", "10<C-w>-")
+nmap("<leader>wk", "10<C-w>+")
+nmap("<leader>wl", "20<C-w><")
 
 -- clear match highlighting
 nmap("<leader>h", ":nohlsearch<CR>")
