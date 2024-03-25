@@ -76,3 +76,11 @@
 | `<leader>dd` | open floating lsp diagnostics    |
 | `<leader>dl` | open list of lsp diagnostics     |
 | `<leader>rl` | toggle relativenumber            |
+
+## Good to know
+
+| command | action                                                             |
+| ------- | ------------------------------------------------------------------ |
+| <C-a>   | increment all the numbers in a selection by 1                      |
+| g<C-a>  | auto increment all the numbers in a selection in an ascending list |
+

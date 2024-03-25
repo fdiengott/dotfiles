@@ -1,6 +1,6 @@
 -- vim.api.nvim_create_augroup("copilot", { clear = true })
 -- vim.api.nvim_create_autocmd("BufEnter", {
---     command = "xargs setCopilot",
+--     command = "!make setCopilot",
 --     group = "copilot",
---     -- buffer = 0
+--     buffer = 0
 -- })

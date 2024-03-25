@@ -24,15 +24,16 @@ vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- switch between windows
--- nmap("<C-h>", "<C-w>h")
--- nmap("<C-j>", "<C-w>j")
--- nmap("<C-k>", "<C-w>k")
--- nmap("<C-l>", "<C-w>l")
+nmap("<C-h>", "<C-w>h")
+nmap("<C-j>", "<C-w>j")
+nmap("<C-k>", "<C-w>k")
+nmap("<C-l>", "<C-w>l")
 nmap("<leader>w", "<C-w>")
-nmap("<leader>w+", "10<C-w>+")
-nmap("<leader>w-", "10<C-w>-")
-nmap("<leader>w>", "10<C-w>>")
-nmap("<leader>w<", "10<C-w><")
+nmap("<C-+>", "10<C-w>+")
+nmap("<C-->", "10<C-w>-")
+-- TODO: check if these work
+nmap("<C->>", "10<C-w>>")
+nmap("<C-<>", "10<C-w><")
 
 -- clear match highlighting
 nmap("<leader>h", ":nohlsearch<CR>")
