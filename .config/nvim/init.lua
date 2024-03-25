@@ -27,9 +27,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
 -- [[ Configure plugins ]]
 --  You can configure plugins using the `config` key.
---
 require('lazy').setup({
     -- Git related plugins
     'tpope/vim-fugitive',
@@ -53,20 +53,7 @@ require('lazy').setup({
 
     'sindrets/diffview.nvim',
 
-    'github/copilot.vim',
-    {
-        "CopilotC-Nvim/CopilotChat.nvim",
-        branch = "canary",
-        dependencies = {
-            { "github/copilot.vim" },    -- or github/copilot.vim
-            { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
-        },
-        opts = {
-            debug = true, -- Enable debugging
-            -- See Configuration section for rest
-        },
-        -- See Commands section for default commands if you want to lazy load on them
-    },
+    require('plugins.copilot'),
 
     -- NOTE: This is where your plugins related to LSP can be installed.
     --  The configuration is done below. Search for lspconfig to find it below.
