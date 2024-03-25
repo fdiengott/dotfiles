@@ -54,6 +54,7 @@ require('lazy').setup({
     'sindrets/diffview.nvim',
 
     require('plugins.copilot'),
+    require('plugins.conform'),
 
     {
         "eoh-bse/minintro.nvim",
