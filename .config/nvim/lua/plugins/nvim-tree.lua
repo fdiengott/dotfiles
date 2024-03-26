@@ -28,9 +28,9 @@ return {
 
                 -- optionally enable 24-bit colour
                 vim.opt.termguicolors = true
-
-                vim.keymap.set('n', "<leader>q", ":NvimTreeToggle<CR>")
             end
         })
+
+        vim.keymap.set('n', "<leader>q", "<cmd>NvimTreeToggle<CR>")
     end
 }
