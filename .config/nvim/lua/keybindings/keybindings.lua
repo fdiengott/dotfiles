@@ -11,7 +11,11 @@ local imap = function(keys, func)
 	vim.api.nvim_set_keymap("i", keys, func, opts)
 end
 
-nmap("<leader><leader>s", ":source %<CR>")
+-- Keymaps for better default experience
+-- See `:help vim.keymap.set()`
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+
+nmap("<leader>ss", ":source %<CR>", '[ss]ource')
 
 -- Open root init.lua file
 nmap("<leader>vi", ":tabe $MYVIMRC<CR>", 'Open [vi]m config')
