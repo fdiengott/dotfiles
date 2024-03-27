@@ -7,13 +7,15 @@ alias ni='npm install'
 alias home='code ~'
 alias reload='source ~/.zshrc'
 alias op='code .'
+alias ff='nvim $(fzf)'
+alias nv='nvim'
+alias vi='nvim ~/.config/nvim/'
 
 # command line tools
 alias ls='exa -1F --color=always'
 alias tree='exa --tree -I node_modules'
 alias cat='batcat'
 alias fhist='history | fzf'
-alias ff='nvim $(fzf)'
 
 # git
 alias gst='git status'
