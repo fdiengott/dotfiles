@@ -1,6 +1,7 @@
 -- this file isn't used, but is a good representation of what is imported
 return {
     require('plugins.copilot'),
+    require('plugins.copilot-chat'),
     require('plugins.conform'),
     require('plugins.vim-repeat'),   -- makes the dot function a little smarter
     require('plugins.vim-sleuth'),   -- Detect tabstop and shiftwidth automatically

@@ -11,6 +11,8 @@ vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+require('utils.copilot') -- loads a global fn to check if can use copilot
+
 require('plugins.config.lazy')
 
 -- [[ Configure plugins ]]
@@ -34,6 +36,7 @@ require('plugins.config.mason')
 require('plugins.config.neodev')
 require('plugins.config.mason')
 require('plugins.config.cmp')
+require('plugins.config.copilot-chat')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
