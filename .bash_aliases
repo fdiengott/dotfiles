@@ -7,7 +7,7 @@ alias ni='npm install'
 alias home='code ~'
 alias reload='source ~/.zshrc'
 alias op='code .'
-alias ff='nvim $(fzf)'
+alias nvf='nvim $(fzf)'
 alias nv='nvim'
 alias vi='nvim ~/.config/nvim/'
 
