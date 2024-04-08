@@ -99,3 +99,4 @@ export FZF_DEFULAT_OPTS='--height 40% --reverse --border'
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+PATH="$HOME/.local/bin:$PATH"

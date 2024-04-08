@@ -37,6 +37,7 @@ require('plugins.config.neodev')
 require('plugins.config.mason')
 require('plugins.config.cmp')
 require('plugins.config.copilot-chat')
+require('plugins.config.harpoon')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
