@@ -16,4 +16,4 @@ vim.cmd("highlight TabLineSel guibg=#0044aa")
 -- cursor colors
 vim.cmd('highlight cursor guibg=#aaaaaa')
 vim.cmd('highlight vcursor guibg=#cccc00')
-vim.cmd("highlight CursorLine guibg=#222428")
+vim.cmd("highlight CursorLine guibg=#373a3f")
