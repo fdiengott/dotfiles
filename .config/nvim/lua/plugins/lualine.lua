@@ -11,15 +11,15 @@ return {
         },
         sections = {
             lualine_a = { 'mode' },
-            lualine_b = { 'branch', 'diff' },
+            lualine_b = { 'diff' },
             lualine_c = {
                 {
                     'filename',
                     path = 1
                 },
             },
-            -- lualine_x = { 'buffers' },
-            lualine_y = { 'filetype', 'filesize' },
+            lualine_x = { 'filetype', 'filesize' },
+            lualine_y = { 'branch' },
             lualine_z = { 'location' }
         },
         tabline = {
