@@ -1,15 +1,16 @@
 local builtin = require('telescope.builtin')
+local utils = require('telescope.utils')
 
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>sr', builtin.oldfiles, { desc = '[S]earch [r]ecently opened files' })
 vim.keymap.set('n', '<leader><space>', builtin.buffers, { desc = '[ ] Find existing buffers' })
-vim.keymap.set('n', '<leader>sl', function()
+vim.keymap.set('n', '<leader>slb', function()
 	-- You can pass additional configuration to telescope to change theme, layout, etc.
 	builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
 		winblend = 10,
 		previewer = false,
 	})
-end, { desc = '[S]earch in [l]ocal buffer' })
+end, { desc = '[S]earch in [l]ocal [b]uffer' })
 
 local function telescope_live_grep_open_files()
 	builtin.live_grep {
@@ -27,3 +28,7 @@ vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [g]re
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 -- vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
 -- vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
+vim.keymap.set('n', '<leader>slf', function() builtin.find_files({ cwd = utils.buffer_dir() }) end,
+	{ desc = '[S]earch [local] [f]iles' })
+vim.keymap.set('n', '<leader>slg', function() builtin.live_grep({ cwd = utils.buffer_dir() }) end,
+	{ desc = '[S]earch [local] by [G]rep' })
