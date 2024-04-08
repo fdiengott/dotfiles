@@ -2,7 +2,7 @@ return {
     'Wansmer/treesj',
     -- dependencies = { 'nvim-treesitter/nvim-treesitter' },
     keys = {
-        { "<leader>m", "<cmd>TSJToggle<cr>", desc = "Toggle object" },
+        { "<leader>o", "<cmd>TSJToggle<cr>", desc = "Toggle [o]bject" },
     },
     opts = { use_default_keymaps = false },
 }
