@@ -118,3 +118,7 @@ The following commands are done immediately after the tag has been typed (e.g. s
 <C-x><space> --- adds a closing tag and puts the cursor between the two
 <C-x><CR> --- adds a closing tag down a couple lines and puts the curser in the middle
 --]]
+
+vim.keymap.set("n", "<leader>/", function()
+	vim.cmd("norm gcO TODO: ")
+end, { desc = 'Insert todo' })
