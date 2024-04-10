@@ -9,7 +9,7 @@ alias reload='source ~/.zshrc'
 alias op='code .'
 alias nvf='nvim $(fzf)'
 alias nv='nvim'
-alias vi='nvim ~/.config/nvim/'
+alias vi='cd ~/.config/nvim/ && nv'
 
 # command line tools
 alias ls='exa -1F --color=always'
