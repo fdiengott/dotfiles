@@ -27,6 +27,8 @@ local snippets = {
 -- https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md#loaders
 luasnip.add_snippets("javascriptreact", snippets)
 luasnip.add_snippets("javascript", snippets)
+luasnip.add_snippets("typescript", snippets)
+luasnip.add_snippets("typescriptreact", snippets)
 
 -- example of repeat
 -- luasnip.add_snippets("all", {
