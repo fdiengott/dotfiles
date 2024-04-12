@@ -34,10 +34,10 @@ nmap("<C-k>", "<C-w>k")
 nmap("<C-l>", "<C-w>l")
 nmap("<leader>w", "<C-w>")
 
-nmap("<leader>wh", "20<C-w>>")
+nmap("<leader>wh", "20<C-w><")
 nmap("<leader>wj", "10<C-w>-")
 nmap("<leader>wk", "10<C-w>+")
-nmap("<leader>wl", "20<C-w><")
+nmap("<leader>wl", "20<C-w>>")
 
 -- clear match highlighting
 nmap("<leader>h", ":nohlsearch<CR>")
