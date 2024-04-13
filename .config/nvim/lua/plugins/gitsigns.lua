@@ -28,7 +28,7 @@ return {
                 vim.schedule(function()
                     gs.next_hunk()
                 end)
-                return '--[[ --[[ <Ignore> ]] ]]'
+                return '<Ignore>'
             end, { expr = true, desc = 'Jump to next hunk' })
 
             map({ 'n', 'v' }, '[c', function()
