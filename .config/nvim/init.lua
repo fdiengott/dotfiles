@@ -37,6 +37,7 @@ require('plugins.config.neodev')
 require('plugins.config.mason')
 require('plugins.config.cmp')
 require('plugins.config.copilot-chat')
+require('plugins.config.which-key')
 require('plugins.config.harpoon')
 require('plugins.config.comment')
 
