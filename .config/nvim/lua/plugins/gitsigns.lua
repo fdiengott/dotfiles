@@ -59,10 +59,12 @@ return {
             map('n', '<leader>hb', function()
                 gs.blame_line { full = false }
             end, { desc = 'git blame line' })
-            map('n', '<leader>hd', gs.diffthis, { desc = 'git diff against index' })
-            map('n', '<leader>hD', function()
-                gs.diffthis '~'
-            end, { desc = 'git diff against last commit' })
+            -- map('n', '<leader>hd', gs.diffthis, { desc = 'git diff against index' })
+            -- map('n', '<leader>hD', function()
+            --     gs.diffthis '~'
+            -- end, { desc = 'git diff against last commit' })
+            -- map('n', '<leader>hd', ":DiffviewFileHistory %<CR>", { desc = 'git diff file' })
+            -- map('n', '<leader>hD', ":DiffviewFileHistory<CR>", { desc = 'git diff branchfile' })
 
             -- Toggles
             map('n', '<leader>tb', gs.toggle_current_line_blame, { desc = 'toggle git blame line' })
