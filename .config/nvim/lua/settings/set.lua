@@ -3,9 +3,6 @@
 
 vim.opt.path = vim.opt.path + "**"
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
-
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
@@ -28,6 +25,10 @@ vim.opt.incsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
+vim.opt.nu = true
+vim.opt.relativenumber = true
+
+vim.opt.spell = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
