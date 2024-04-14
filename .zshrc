@@ -100,3 +100,10 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 PATH="$HOME/.local/bin:$PATH"
+
+# bun completions
+[ -s "/home/fdiengott/.bun/_bun" ] && source "/home/fdiengott/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
