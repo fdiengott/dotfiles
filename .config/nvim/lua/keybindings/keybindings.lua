@@ -103,6 +103,7 @@ nmap("<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], '[R]ep
 
 -- vmap("<leader>sw", [[:!tr ' ' '\n' | sort | tr '\n' ' '<CR>]], '[S]ort words')
 vmap("<leader>s", ":sort<CR>", '[S]ort words')
+nmap("<leader>ks", "<cmd>TSJToggle<cr>:norm vi{<cr>:sort<CR><cmd>TSJToggle<cr>", '[K]ey [S]ort')
 
 -- quickfix
 nmap("[q", ":cprev<cr>", "quickfix [p]rev")
