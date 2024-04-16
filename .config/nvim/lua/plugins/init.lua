@@ -8,7 +8,6 @@ return {
     require('plugins.vim-rhubarb'),  -- Git related plugins
     require('plugins.vim-fugitive'), -- Git related plugins
     require('plugins.vim-surround'), -- adding a new command/motion. see https://github.com/tpope/vim-surround for details
-    require('plugins.leap'),         -- Leap Motion
     require('plugins.hlsearch'),
     require('plugins.emmet-vim'),    -- HTML/CSS/JS autocompletion
     require('plugins.nvim-tree'),

@@ -55,13 +55,6 @@
 | `]c`     | move cursor to next git hunk     | 
 | `<C-o>`  | move to previous cursor position |
 
-### Leap
-| command  | action                                                            |
-| -------- | ----------------------------------------------------------------- |
-| `s`      | two the two first chars of target word and then leap to new place | 
-| `S`      | search previous words from cursor                                 | 
-| `gs`     | search in all visible buffers                                     | 
-
 ## Emmett
 
 | command  | action                           |
