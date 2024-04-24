@@ -6,12 +6,15 @@ local extras = require("luasnip.extras")
 local rep = extras.rep -- this will repeat whatever is in the corresponding insert
 local fmt = require("luasnip.extras.fmt").fmt
 
+local countSnippet = {
+    text("console.count("),
+    insert(1),
+    text(");"),
+}
+
 local snippets = {
-    snippet({ trig = "count", name = "console.count" }, {
-        text("console.count("),
-        insert(1),
-        text(");"),
-    }),
+    snippet({ trig = "count", name = "console.count" }, countSnippet),
+    snippet({ trig = "cc", name = "console.count" }, countSnippet),
     snippet({ trig = "log", name = "console.log" }, {
         text("console.log("),
         insert(1),
