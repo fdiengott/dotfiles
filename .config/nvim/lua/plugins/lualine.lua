@@ -18,9 +18,15 @@ return {
                     path = 1
                 },
             },
-            lualine_x = { 'filetype', 'filesize' },
-            lualine_y = { 'branch' },
-            lualine_z = { 'location' }
+            lualine_x = { 'filetype' },
+            lualine_y = { 'filesize' },
+            lualine_z = { {
+                'branch',
+                fmt = function(str) return str:sub(string.len('feature') + 2) end,
+                color = { bg = '#91dbfa', gui = 'bold' },
+                icons_enabled = false,
+            } },
+            -- lualine_z = { 'location' }
         },
         tabline = {
             lualine_a = {
