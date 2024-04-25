@@ -65,3 +65,5 @@ vim.opt.scrolloff = 4
 
 vim.opt.grepprg = "rg --vimgrep"
 vim.opt.grepformat = "%f:%l:%c:%m"
+
+vim.g.skip_ts_context_commentstring_module = true
