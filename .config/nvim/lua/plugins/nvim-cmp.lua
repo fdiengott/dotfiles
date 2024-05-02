@@ -24,4 +24,8 @@ return {
         -- Adds a number of user-friendly snippets
         'rafamadriz/friendly-snippets',
     },
+
+    config = function()
+        require('luasnip').filetype_extend("javascript", { "typescript" })
+    end
 }
