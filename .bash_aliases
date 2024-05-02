@@ -32,10 +32,17 @@ alias revert='git reset --soft HEAD~1'
 alias gbc='git branch --show-current'
 
 alias windows='cd ~/../../mnt/c/Users/fdien/code'
+alias kboard='cd ~/../../mnt/c/Users/fdien/qmk_firmware/keyboards/ergodox_ez/keymaps/slag_ergodox/ && nv keymap.c'
 
 help() {
    COMMAND=$1 
    $COMMAND --help >> zx.txt && cat zx.txt && rm zx.txt
+}
+
+cocf() {
+    commit=$(glo | fzf)
+    hash=${commit%% *}
+    co $hash
 }
 
 # takes a branch name of `feature/####/<component>/<description>`
