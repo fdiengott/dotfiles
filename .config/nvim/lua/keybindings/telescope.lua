@@ -18,7 +18,7 @@ local function telescope_live_grep_open_files()
 		prompt_title = 'Live Grep in Open Files',
 	}
 end
-vim.keymap.set('n', '<leader>so', telescope_live_grep_open_files, { desc = '[S]earch in [o]pen Files' })
+vim.keymap.set('n', '<leader>so', telescope_live_grep_open_files, { desc = '[S]earch by grep in [o]pen Files' })
 -- vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope' })
 vim.keymap.set('n', '<leader>ps', builtin.git_files, { desc = '[p]roject [s]earch Git files' })
 vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [f]iles' })
