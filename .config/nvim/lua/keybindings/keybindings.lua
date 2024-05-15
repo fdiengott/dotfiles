@@ -32,6 +32,12 @@ nmap("<C-h>", "<C-w>h")
 nmap("<C-j>", "<C-w>j")
 nmap("<C-k>", "<C-w>k")
 nmap("<C-l>", "<C-w>l")
+
+nmap("<C-H>", "20<C-w><")
+nmap("<C-J>", "10<C-w>-")
+nmap("<C-K>", "10<C-w>+")
+nmap("<C-L>", "20<C-w>>")
+
 nmap("<leader>w", "<C-w>")
 
 nmap("<leader>wh", "20<C-w><")
