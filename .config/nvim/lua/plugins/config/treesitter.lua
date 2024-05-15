@@ -41,6 +41,7 @@ vim.defer_fn(function()
           ['ii'] = '@conditional.inner',
           ['al'] = '@loop.outer',
           ['il'] = '@loop.inner',
+          ['ag'] = '@comment.outer',
         },
       },
       move = {
