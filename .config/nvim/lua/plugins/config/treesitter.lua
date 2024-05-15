@@ -4,8 +4,7 @@
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'go', 'lua', 'python', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'svelte' },
-
+    ensure_installed = { 'go', 'lua', 'python', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'svelte', 'markdown' },
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
     -- Install languages synchronously (only applied to `ensure_installed`)
@@ -79,4 +78,12 @@ vim.defer_fn(function()
       },
     },
   }
+
+  -- local ft_to_parser = require("nvim-treesitter.parsers").filetype_to_parsername
+  -- ft_to_parser.mdx = "markdown"
+
+  -- ("nvim-treesitter.language").register('md', 'mdx')
+  vim.treesitter.language.register("md", "mdx")
+
+  -- vim.treesitter.language.register()
 end, 0)
