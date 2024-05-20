@@ -68,6 +68,7 @@ vim.keymap.set('n', "<leader>bd", ":bd<CR>", { desc = '[d]elete [b]uffer' })
 vim.keymap.set('n', "<leader>bw", ":w<CR>", { desc = '[b]uffer [w]rite' })
 vim.keymap.set('n', "<leader>fw", ":w<CR>", { desc = '[f]ormat [w]rite' })
 vim.keymap.set('n', "<leader>nw", ":noa w<CR>", { desc = '[n]o format [w]rite' })
+vim.keymap.set('n', "<leader>bad", ":bufdo bd<CR>", { desc = '[b]uffer [a]ll [d]elete' })
 
 -- Insert
 imap("jk", "<ESC>")
