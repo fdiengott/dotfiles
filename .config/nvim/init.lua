@@ -30,16 +30,17 @@ formatting_options = {
   insertFinalNewline = true,
 }
 
-require('plugins.config.telescope')
-require('plugins.config.treesitter')
+require('plugins.config.cmp')
+require('plugins.config.comment')
+require('plugins.config.copilot-chat')
+require('plugins.config.harpoon')
+require('plugins.config.mason')
 require('plugins.config.mason')
 require('plugins.config.neodev')
-require('plugins.config.mason')
-require('plugins.config.cmp')
-require('plugins.config.copilot-chat')
+require('plugins.config.telescope')
+require('plugins.config.treesitter')
+require('plugins.config.vim-fugitive')
 require('plugins.config.which-key')
-require('plugins.config.harpoon')
-require('plugins.config.comment')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
