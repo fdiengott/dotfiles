@@ -1,4 +1,5 @@
-return returnIfCopilot({
+-- return returnIfCopilot({
+return {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
     dependencies = {
@@ -7,5 +8,19 @@ return returnIfCopilot({
     },
     opts = {
         debug = true, -- Enable debugging
+        mappings = {
+            complete = {
+                normal = '<C-a>',
+                insert = '<C-a>',
+            },
+            reset = {
+                normal = '',
+                insert = '',
+            },
+            submit_prompt = {
+                normal = '<CR>',
+                insert = '<C-CR>',
+            },
+        }
     }
-})
+}
