@@ -65,6 +65,7 @@ vim.keymap.set('n', "<leader>be", ":e " .. currentDir, { desc = 'open [b]uffer w
 vim.keymap.set('n', "<leader>bv", ":vs " .. currentDir, { desc = 'open [b]uffer with :[v]s' })
 vim.keymap.set('n', "<leader>bs", ":sp " .. currentDir, { desc = 'open [b]uffer with :[s]p' })
 vim.keymap.set('n', "<leader>bd", ":bd<CR>", { desc = '[d]elete [b]uffer' })
+vim.keymap.set('n', "<leader>bdf", ":bd!<CR>", { desc = '[b]uffer [d]elete [f]orce' })
 vim.keymap.set('n', "<leader>bw", ":w<CR>", { desc = '[b]uffer [w]rite' })
 vim.keymap.set('n', "<leader>fw", ":w<CR>", { desc = '[f]ormat [w]rite' })
 vim.keymap.set('n', "<leader>nw", ":noa w<CR>", { desc = '[n]o format [w]rite' })
