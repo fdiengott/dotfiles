@@ -1,5 +1,9 @@
--- return returnIfCopilot({
+if is_linux() then
+    return {}
+end
+
 return {
+    -- return {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
     dependencies = {

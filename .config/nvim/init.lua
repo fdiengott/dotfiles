@@ -11,9 +11,8 @@ vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require('utils.copilot') -- loads a global fn to check if can use copilot
-
 require('plugins.config.lazy')
+require('utils.get-operating-system')
 
 -- [[ Configure plugins ]]
 -- For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
