@@ -16,6 +16,8 @@ alias ls='exa -1F --color=always'
 alias tree='exa --tree -I node_modules'
 alias cat='batcat'
 alias fhist='history | fzf'
+alias c='xclip -selection clipboard' # copy
+alias v='xclip -o' # paste in terminal
 
 # git
 alias gst='git status'
@@ -65,3 +67,4 @@ findFile() {
 logit() {
     $@ 2>&1 | tee log.txt
 }
+
