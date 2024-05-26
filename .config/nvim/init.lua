@@ -41,6 +41,7 @@ require('plugins.config.telescope')
 require('plugins.config.treesitter')
 require('plugins.config.vim-fugitive')
 require('plugins.config.which-key')
+require('plugins.config.nvim-ts-autotag')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
