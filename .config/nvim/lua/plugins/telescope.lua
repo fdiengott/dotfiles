@@ -21,12 +21,17 @@ return {
             },
         },
         config = function()
-            require('telescope').setup {
+            local telescope = require('telescope')
+            local lga_actions = require("telescope-live-grep-args.actions")
+
+            telescope.setup({
                 defaults = {
                     mappings = {
                         i = {
                             ['<C-u>'] = false,
                             ['<C-d>'] = false,
+                            ['<C-k>'] = lga_actions.quote_prompt({ postfix = " --iglob *." }),
+                            ['<C-space>'] = lga_actions.to_fuzzy_refine,
                         },
                     },
                     file_ignore_patterns = {
@@ -34,7 +39,9 @@ return {
                         ".git"
                     },
                 },
-            }
+            })
+
+            telescope.load_extension("live_grep_args")
         end
     },
 }
