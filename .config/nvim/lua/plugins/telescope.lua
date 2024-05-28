@@ -31,7 +31,6 @@ return {
                             ['<C-u>'] = false,
                             ['<C-d>'] = false,
                             ['<C-k>'] = lga_actions.quote_prompt({ postfix = " --iglob *." }),
-                            ['<C-space>'] = lga_actions.to_fuzzy_refine,
                         },
                     },
                     file_ignore_patterns = {
