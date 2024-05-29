@@ -24,6 +24,6 @@ vim.cmd("highlight IncSearch guibg=#ffffff")
 
 vim.cmd("highlight FlashMatch guibg=#e7a7fd guifg=#000000")
 vim.cmd("highlight FlashCurrent guibg=#ffffff guifg=#ff0000 gui=bold,italic,underline")
-vim.cmd("highlight FlashLabel guibg=#91dbfa guifg=#000000")
+vim.cmd("highlight FlashLabel guibg=#bae4f5 guifg=#000000")
 vim.cmd("highlight FlashPrompt guibg=#ffff22 guifg=#000000")
 vim.cmd("highlight FlashPromptIcon guifg=#000000")
