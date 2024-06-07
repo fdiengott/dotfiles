@@ -49,12 +49,12 @@ vim.defer_fn(function()
         goto_next_start = {
           -- [']m'] = '@function.outer',
           -- [']]'] = '@class.outer',
-          [']]'] = '@function.outer',
+          [']['] = '@function.outer',
         },
         goto_next_end = {
           -- [']M'] = '@function.outer',
           -- [']['] = '@class.outer',
-          [']['] = '@function.outer',
+          [']]'] = '@function.outer',
         },
         goto_previous_start = {
           -- ['[m'] = '@function.outer',
