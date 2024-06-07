@@ -3,7 +3,7 @@
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 require('luasnip').filetype_extend("typescript", { "javascript" })
-require('luasnip.loaders.from_vscode').load()
+require('luasnip.loaders.from_vscode').load({ include = { "javascript" } })
 luasnip.config.setup {}
 
 cmp.setup {
@@ -48,5 +48,6 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'path' },
+    -- { name = 'supermaven' },
   },
 }
