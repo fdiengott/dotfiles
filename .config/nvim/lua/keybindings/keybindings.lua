@@ -72,7 +72,7 @@ vim.keymap.set('n', "<leader>bde", ":%bd|e#|bd#<CR>", { desc = '[b]uffer [d]elet
 -- Insert
 imap("jk", "<ESC>")
 imap("kj", "<ESC>")
-imap("<C-s>", "<C-x><C-o>")
+-- imap("<C-s>", "<C-x><C-o>")
 
 -- Visual
 vmap("<C-k>", "<ESC>")
