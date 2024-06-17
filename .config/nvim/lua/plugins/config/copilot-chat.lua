@@ -1,1 +1,1 @@
-vim.keymap.set('n', '<leader>tcp', ':CopilotChatToggle<CR>', { desc = '[T]oggle [c]o[p]ilot chat' });
+vim.keymap.set('n', '<leader>cp', ':CopilotChatToggle<CR>', { desc = 'Toggle [c]o[p]ilot chat' });
