@@ -43,7 +43,7 @@ nmap("<leader>wk", "10<C-w>+")
 nmap("<leader>wl", "20<C-w>>")
 
 -- clear match highlighting
-nmap("<leader>h", ":nohlsearch<CR>")
+-- nmap("<leader>h", ":nohlsearch<CR>")
 
 -- Navigation
 nmap("(", "^")
