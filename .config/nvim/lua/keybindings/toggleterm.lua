@@ -4,7 +4,7 @@ require('toggleterm').setup({
 	open_mapping = [[<c-\>]],
 })
 
-vim.keymap.set("n", "<leader>tt", vim.cmd.ToggleTerm, { desc = 'open [T]erminal' })
+vim.keymap.set("n", "<leader>te", vim.cmd.ToggleTerm, { desc = 'open [Te]rminal' })
 
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
