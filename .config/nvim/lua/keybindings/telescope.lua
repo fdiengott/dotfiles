@@ -8,7 +8,6 @@ vim.keymap.set('n', '<leader><space>', builtin.buffers, { desc = '[ ] Find exist
 vim.keymap.set('n', '<leader>slb', function()
 	-- You can pass additional configuration to telescope to change theme, layout, etc.
 	builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-		winblend = 10,
 		previewer = false,
 	})
 end, { desc = '[S]earch in [l]ocal [b]uffer' })
@@ -21,13 +20,15 @@ local function telescope_live_grep_open_files()
 end
 vim.keymap.set('n', '<leader>so', telescope_live_grep_open_files, { desc = '[S]earch by grep in [o]pen Files' })
 -- vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope' })
-vim.keymap.set('n', '<leader>ps', builtin.git_files, { desc = '[p]roject [s]earch Git files' })
-vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [f]iles' })
+vim.keymap.set('n', '<leader>ps', function() builtin.git_files({ hidden = true }) end,
+	{ desc = '[p]roject [s]earch Git files' })
+vim.keymap.set('n', '<leader>sf', function() builtin.find_files({ hidden = true }) end, { desc = '[S]earch [f]iles' })
 vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [h]elp' })
 vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [w]ord' })
 
 -- vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [g]rep' })
-vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", { desc = '[S]earch by [g]rep' })
+vim.keymap.set("n", "<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+	{ desc = '[S]earch by [g]rep' })
 
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 -- vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
