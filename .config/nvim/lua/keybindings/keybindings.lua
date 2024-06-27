@@ -96,7 +96,7 @@ nmap("n", "nzz")
 nmap("N", "Nzz")
 
 -- paste without putting the deleted text on the clipboard
-vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "p", "\"_dP")
 
 -- leader y yanks to OS clipboard so vim can have internal clipboard
 nmap("<leader>y", "\"+y", 'yank to os clipboard')
