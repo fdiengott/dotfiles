@@ -5,5 +5,11 @@ return {
         require("randiverse").setup({
             -- Custom configurations here, or leave empty to use defaults
         })
+
+
+        local wk = require('which-key')
+        wk.add({
+            { "<leader>r", group = "[R]andiverse" },
+        })
     end
 }
