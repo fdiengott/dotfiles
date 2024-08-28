@@ -22,6 +22,7 @@ alias v='xclip -o' # paste in terminal
 # git
 alias gst='git status'
 alias glo='git log --oneline'
+alias glop='git log --pretty=oneline --graph --decorate --all'
 alias gcm='git commit -m '
 alias co='git checkout'
 alias gcb='git checkout -b '
@@ -32,6 +33,8 @@ alias pull='git pull'
 alias hreset='git reset --hard'
 alias revert='git reset --soft HEAD~1'
 alias gbc='git branch --show-current'
+alias gcme='git commit --allow-empty -m '
+alias prune='git branch --merged main | grep -v "main" | xargs -n 1 git branch -d'
 
 alias windows='cd ~/../../mnt/c/Users/fdien/code'
 alias kboard='cd ~/../../mnt/c/Users/fdien/qmk_firmware/keyboards/ergodox_ez/keymaps/slag_ergodox/ && nv keymap.c'
