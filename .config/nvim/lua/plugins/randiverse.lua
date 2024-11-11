@@ -4,6 +4,12 @@ return {
     config = function()
         require("randiverse").setup({
             -- Custom configurations here, or leave empty to use defaults
+            keymaps = {
+                name = {
+                    keymap = "<leader>rn",
+                    enabled = false,
+                }
+            }
         })
 
 
