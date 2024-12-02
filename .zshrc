@@ -56,9 +56,9 @@ load-nvmrc() {
   elif [[ ($(nvm version) != $(nvm version default)) && ($PWD = /Users/$USERNAME) ]]; then
     echo "Reverting to nvm default version"
     nvm use default
-  fi }
-  add-zsh-hook chpwd load-nvmrc
-  load-nvmrc
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
