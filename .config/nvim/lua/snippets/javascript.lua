@@ -15,11 +15,10 @@ local countSnippet = {
 local snippets = {
     snippet({ trig = "count", name = "console.count" }, countSnippet),
     snippet({ trig = "cc", name = "console.count" }, countSnippet),
-    snippet({ trig = "log", name = "console.log" }, {
-        text("console.log("),
-        insert(1),
-        text(");"),
-    }),
+    snippet({ trig = "log", name = "console.log" }, { text("console.log("), insert(1), text(");"), }),
+    snippet({ trig = "cl", name = "console.log" }, { text("console.log("), insert(1), text(");"), }),
+    snippet({ trig = "clo", name = "console.log object" }, { text("console.log({"), insert(1), text("});"), }),
+    snippet({ trig = "cls", name = "console.log string" }, { text("console.log('"), insert(1), text("');"), }),
     snippet({ trig = "raf", name = "react arrow function" },
         fmt("const {} = ({}) => {{\n\t{}\n}};", { insert(1), insert(2), insert(3) })),
     -- snippet("impt", fmt("import {{{}}} from 'propt-types';"), { insert(1) }),
