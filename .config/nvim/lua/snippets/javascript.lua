@@ -31,6 +31,7 @@ luasnip.add_snippets("javascriptreact", snippets)
 luasnip.add_snippets("javascript", snippets)
 luasnip.add_snippets("typescript", snippets)
 luasnip.add_snippets("typescriptreact", snippets)
+luasnip.add_snippets("astro", snippets)
 
 -- example of repeat
 -- luasnip.add_snippets("all", {
